@@ -1,0 +1,30 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+     <color name="threadfliter_state_inenabled">#ffffffff</color>
+     <color name="threadfliter_state_enabled">#ff5c5c5c</color>
+    
+     <!-- 字体颜色 灰色 -->
+     <color name="font_color_gray">#ff7f7f7f</color>
+     <color name="font_color_gray_small">#ffc0c0c0</color>
+     <color name="font_color_gray_small2">#ffe6e6e6</color>
+     
+     <!-- 字体颜色 蓝色 -->
+     <color name="font_color_blue">#FF1380E9</color>
+     
+     <!-- 主题色 蓝色 19 128 233-->
+     <color name="theme_color_blue">#FF1380E9</color>  
+     
+     <!-- 默认字体颜色-黑色 64 64 64-->
+     <color name="def_font_color_black">#FF404040</color>
+     <color name="def_background">#FFFFFFFF</color> 
+     
+     <!-- 默认字体颜色-红色 -->
+     <color name="def_font_color_red">#FFF65219</color>
+     
+     <!-- 默认字体颜色-白色 -->
+     <color name="def_font_color_white">#FFFFFFFF</color>
+     
+      <!-- 默认字体颜色-黑色 64 64 64-->
+     <color name="bg_color_gray_1">#FFd0d0d0</color>
+     <color name="bg_color_transparent">#00000000</color>
+</resources>

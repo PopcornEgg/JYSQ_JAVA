@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFFFF"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp" >
+
+ <TextView
+     android:id="@+id/TextView01"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_weight="0.25"
+     android:gravity="center"
+     android:text="编码"
+     android:textColor="@color/def_font_color_black"
+     android:textSize="@dimen/Text_size_middle_1" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="标签"
+            android:textColor="@color/def_font_color_black"
+            android:textSize="@dimen/Text_size_middle_1" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="耗时"
+            android:textColor="@color/def_font_color_black"
+            android:textSize="@dimen/Text_size_middle_1" />
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="成绩"
+            android:textColor="@color/def_font_color_black"
+            android:textSize="@dimen/Text_size_middle_1" />
+
+</LinearLayout>

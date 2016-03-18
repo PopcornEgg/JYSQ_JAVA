@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color_blue" >
+
+	<TextView
+	    android:id="@+id/my"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:background="@color/bg_color_transparent"
+	    android:padding="10dp"
+	    android:scaleType="fitXY"
+	    android:src="@drawable/icon_meassage_01"
+	    android:text="我的提问？"
+	    android:textColor="@color/font_color_gray_small2"
+	    android:textSize="@dimen/Text_size_small_1" />
+
+    <Button
+        android:id="@+id/textSearch"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="180dp"
+        android:background="#FFFFFFFF"
+        android:gravity="center_vertical|center_horizontal|left"
+        android:text="   请输入搜索内容"
+        android:textColor="@color/def_font_color_black"
+        android:textSize="@dimen/Text_size_small_1" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textSearch"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="17dp"
+        android:background="#00000000"
+        android:text="历史事件"
+        android:textColor="#b0FFFFFF"
+        android:textSize="@dimen/Text_size_small_1" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:background="#00000000"
+        android:text="数理化公式"
+        android:textColor="#b0FFFFFF"
+        android:textSize="@dimen/Text_size_small_1" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button4"
+        android:layout_alignBottom="@+id/button4"
+        android:layout_alignLeft="@+id/button3"
+        android:background="#00000000"
+        android:text="英语单词"
+        android:textColor="#b0FFFFFF"
+        android:textSize="@dimen/Text_size_small_1" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="20dp"
+        android:background="#00000000"
+        android:text="古诗词"
+        android:textColor="#b0FFFFFF"
+        android:textSize="@dimen/Text_size_small_1" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button6"
+        android:layout_alignBottom="@+id/button6"
+        android:layout_alignRight="@+id/textSearch"
+        android:layout_marginRight="24dp"
+        android:background="#00000000"
+        android:text="语文课文"
+        android:textColor="#b0FFFFFF"
+        android:textSize="@dimen/Text_size_small_1" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button4"
+        android:layout_alignLeft="@+id/button5"
+        android:background="#00000000"
+        android:text="政治事件"
+        android:textColor="#b0FFFFFF"
+        android:textSize="@dimen/Text_size_small_1" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textSearch"
+        android:layout_alignRight="@+id/textSearch"
+        android:background="#00000000"
+        android:scaleType="centerCrop"
+        android:src="@drawable/abc_ic_search_api_holo_light" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButton1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp"
+        android:text="搜完就能记住"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@dimen/Text_size_big_1" />
+
+</RelativeLayout>

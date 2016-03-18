@@ -1,0 +1,242 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Drawing;
+using System.Data;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.IO;
+using QQZeoneMarketing.SpiderCommons;
+using System.Threading;
+
+namespace QQZeoneMarketing
+{
+    public partial class Spider : UserControl
+    {
+        Common preCommon = null;
+        Common curCommon = null;
+        Dictionary<string, Common> commons = new Dictionary<string, Common>();
+        Random random = new Random();
+
+
+        Queue<string> qq = new Queue<string>();
+        //所有QQ，bool 是否有权限
+        Dictionary<string, bool> qqs = new Dictionary<string,bool>();
+
+        object dblock = new object();
+        List<UserInfoDB> dblist = new List<UserInfoDB>();
+
+        UserInfoDB curUserInfoDB = null;
+        public UserInfoDB UIDB
+        {
+            get
+            {
+                if (curUserInfoDB == null)
+                    curUserInfoDB = new UserInfoDB();
+                return curUserInfoDB; 
+            }
+
+            set
+            {
+                curUserInfoDB = value;
+            }
+        }
+
+        int idx = 0;
+        public int okcount = 0;
+        public string QQ
+        {
+            get
+            {
+                idx %= qq.Count();
+
+                string url = qq.Dequeue();
+                UIDB.qq = url;
+
+                return url;
+            }
+        }
+
+        //爬到的QQ
+        public void AddQQ(string url)
+        {
+            if (url.Contains("http://user.qzone.qq.com/"))
+            {
+                string nurl = url.Replace("http://user.qzone.qq.com/", "");
+                string[] array = nurl.Split(new char[] { '/' });
+
+                if (!qqs.ContainsKey(array[0]))
+                {
+                    qqs.Add(array[0], true);
+                    qq.Enqueue(array[0]);
+                }
+            }
+        }
+
+        //一个用户获取结束
+        public void UserGetOver() 
+        {
+            if (curUserInfoDB != null)
+            {
+                lock (dblock)
+                {
+                    dblist.Add(curUserInfoDB);
+                    curUserInfoDB = null;
+                }
+
+                Log(curUserInfoDB.ToString());
+            }
+        }
+
+        public Spider()
+        {
+            InitializeComponent();
+
+            webBrowser1.DocumentCompleted += new WebBrowserDocumentCompletedEventHandler(webBrowser1_DocumentCompleted);
+            RegisterCommonn(new Purview());
+            RegisterCommonn(new NewUser());
+            RegisterCommonn(new UserInfo());
+            RegisterCommonn(new ShuoShuo());
+
+            logger.Items.Clear();
+            LoadQQ();
+
+            Thread uploader = new Thread(new ThreadStart(uploadUserInfo));
+            uploader.Start();
+        }
+
+        //启动时从配置文件中读取上一次缓存未处理的QQ号码
+        void LoadQQ()
+        {
+            try
+            {
+                string strs = File.ReadAllText("未处理.txt");
+                string[] _qqs = strs.Split(new char[] { '\n', '\t' });
+                for (int i = 0; i < _qqs.Length; ++i)
+                {
+                    if (_qqs[i].Length > 1 && !qqs.ContainsKey(_qqs[i]))
+                    {
+                        qq.Enqueue(_qqs[i]);
+                        qqs.Add(_qqs[i], true);
+                    }
+                }
+            }
+            catch
+            {
+
+            }
+           
+        }
+        void SaveQQ()
+        {
+            string fstr = "";
+            string[] _qqs = qq.ToArray();
+            for (int i = 0; i < _qqs.Length; ++i)
+            {
+                fstr += _qqs[i] + "\t\n";
+            }
+
+            File.WriteAllText("未处理.txt", fstr);
+        }
+
+        void RegisterCommonn(Common com)
+        {
+            com.spider = this;
+            com.webBrowser1 = this.webBrowser1;
+            commons.Add(com.GetType().Name, com);
+        }
+
+        public void ChangeCommon(string name)
+        {
+            Common com;
+            if (commons.TryGetValue(name, out com))
+            {
+                curCommon = com;
+            }
+            else
+            {
+                MessageBox.Show("没有找到：" + name);
+            }
+        }
+
+        //网页加载完成回调
+        void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+            webBrowser1.ScriptErrorsSuppressed = true;
+            if (curCommon != null)
+                curCommon.DocumentCompleted();
+        }
+
+        public void Log(string str)
+        {
+            logger.Items.Add(str);
+            logger.SetSelected(logger.Items.Count - 1, true);
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (preCommon != curCommon)
+            {
+                if (preCommon != null)
+                    preCommon.Leave();
+
+                preCommon = curCommon;
+                curCommon.Enter();
+                Console.WriteLine(curCommon.GetType().Name);
+            }
+
+            if (curCommon != null)
+            {
+                curCommon.Tick();
+            }
+
+            label1.Text = string.Format("{0}/{1}", okcount, qq.Count);
+        }
+
+
+        private void btn_Start_Click(object sender, EventArgs e)
+        {
+            timer1.Enabled = true;
+
+            preCommon = null;
+            curCommon = null;
+            ChangeCommon("NewUser");
+        }
+
+        private void btn_Saveqq_Click(object sender, EventArgs e)
+        {
+            SaveQQ();
+        }
+
+      
+        // Note that Go is now an instance method
+        int curUploadIdx = 0;
+        static int oneTimeUpload = 10;
+        private void uploadUserInfo() {
+             while(true)
+             {
+                 List<UserInfoDB> bufferls = new List<UserInfoDB>();
+                 bufferls.Clear();
+                 lock (dblock)
+                 {
+                     int start = curUploadIdx;
+                     int count = start + oneTimeUpload > dblist.Count ? dblist.Count : start + oneTimeUpload;
+                     if (start < count && start >= 0 && start < dblist.Count)
+                     {
+                         for (int i = start; i < count; i++)
+                         {
+                             UserInfoDB uinfo = dblist[i].clone();
+                             bufferls.Add(uinfo);
+                         }
+                         curUploadIdx += count;
+                     }
+                 }
+                 foreach (UserInfoDB uinfo in bufferls)
+                 {
+
+                 }
+            }
+        }
+    }
+}

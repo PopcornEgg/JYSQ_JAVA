@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/searsend_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Head_hight"
+        android:background="#FF1380E9" >
+
+	<ImageButton
+		    android:id="@+id/searchsend_back"
+		    android:layout_width="50dp"
+		    android:layout_height="50dp"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:background="#00000000"
+		    android:padding="13dp"
+		    android:scaleType="centerInside"
+		    android:src="@drawable/back_holo_light" />        <TextView
+            android:id="@+id/searchsend_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="56dp"
+            android:text="提交到问答"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/Text_size_big_1" />
+        
+        <Button
+            android:id="@+id/searchsend_ok"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="#00000000"
+            android:text="提交"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/Text_size_middle_1" />
+
+        <ImageButton
+            android:id="@+id/carget"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/searchsend_ok"
+            android:background="#00000000"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_camera_03" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/searsend_Layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/searsend_Layout"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFFFF"
+        android:gravity="top" >
+
+        <EditText
+            android:id="@+id/searchsend_editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#00000000"
+            android:ems="10"
+            android:gravity="center_vertical|left"
+            android:hint="请完善你的问题"
+            android:inputType="textMultiLine"
+            android:textSize="@dimen/Text_size_middle_1" >
+
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/body"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/searsend_Layout2" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="0.09"
+            android:background="#1F000000" />
+
+        <ImageView
+            android:id="@+id/ImageView01"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignLeft="@+id/gridLayout1"
+            android:layout_alignRight="@+id/gridLayout1"
+            android:layout_below="@+id/gridLayout1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.09"
+            android:background="#1F000000" />
+
+        <GridLayout
+            android:id="@+id/gridLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/gridLayout1"
+            android:layout_below="@+id/ImageView01"
+            android:columnCount="4"
+            android:orientation="horizontal"
+            android:rowCount="2" >
+
+            <Button
+                android:id="@+id/Button09"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_gravity="left"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/threadfilter_btn"
+                android:contentDescription="btnsBottom"
+                android:text="全部"
+                android:textColor="@drawable/threadfilter_btntext"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <Button
+                android:id="@+id/Button10"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_gravity="left"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/threadfilter_btn"
+                android:contentDescription="btnsBottom"
+                android:text="全部"
+                android:textColor="@drawable/threadfilter_btntext"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <Button
+                android:id="@+id/Button11"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_gravity="left"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/threadfilter_btn"
+                android:contentDescription="btnsBottom"
+                android:text="全部"
+                android:textColor="@drawable/threadfilter_btntext"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <Button
+                android:id="@+id/Button12"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_gravity="left"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/threadfilter_btn"
+                android:contentDescription="btnsBottom"
+                android:text="全部"
+                android:textColor="@drawable/threadfilter_btntext"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <Button
+                android:id="@+id/Button13"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_gravity="left"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/threadfilter_btn"
+                android:contentDescription="btnsBottom"
+                android:text="全部"
+                android:textColor="@drawable/threadfilter_btntext"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <Button
+                android:id="@+id/Button14"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_gravity="left"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/threadfilter_btn"
+                android:contentDescription="btnsBottom"
+                android:text="全部"
+                android:textColor="@drawable/threadfilter_btntext"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <Button
+                android:id="@+id/Button15"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_gravity="left"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/threadfilter_btn"
+                android:contentDescription="btnsBottom"
+                android:text="全部"
+                android:textColor="@drawable/threadfilter_btntext"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <Button
+                android:id="@+id/Button16"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_gravity="left"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/threadfilter_btn"
+                android:contentDescription="btnsBottom"
+                android:text="全部"
+                android:textColor="@drawable/threadfilter_btntext"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <Button
+                android:id="@+id/Button17"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_gravity="left"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/threadfilter_btn"
+                android:contentDescription="btnsBottom"
+                android:text="全部"
+                android:textColor="@drawable/threadfilter_btntext"
+                android:textSize="@dimen/Text_size_middle_1" />
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/textShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageView01"
+            android:layout_below="@+id/getcredit"
+            android:layout_marginTop="5dp"
+            android:text="补充问题类别"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/def_font_color_black"
+            android:textSize="@dimen/Text_size_middle_1" />
+
+        <GridLayout
+            android:id="@+id/gridLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textShow"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:columnCount="4"
+            android:columnWidth="10dp"
+            android:orientation="horizontal"
+            android:rowCount="2" >
+
+            <Button
+                android:id="@+id/Button01"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_gravity="left"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/threadfilter_btn"
+                android:contentDescription="btnsTop"
+                android:text="小学"
+                android:textColor="@drawable/threadfilter_btntext"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <Button
+                android:id="@+id/Button02"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_gravity="left"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/threadfilter_btn"
+                android:contentDescription="btnsTop"
+                android:text="初一"
+                android:textColor="@drawable/threadfilter_btntext"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <Button
+                android:id="@+id/Button03"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_gravity="left"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/threadfilter_btn"
+                android:contentDescription="btnsTop"
+                android:text="初二"
+                android:textColor="@drawable/threadfilter_btntext"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <Button
+                android:id="@+id/Button04"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_gravity="left"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/threadfilter_btn"
+                android:contentDescription="btnsTop"
+                android:text="初三"
+                android:textColor="@drawable/threadfilter_btntext"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <Button
+                android:id="@+id/Button05"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_gravity="left"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/threadfilter_btn"
+                android:contentDescription="btnsTop"
+                android:text="高一"
+                android:textColor="@drawable/threadfilter_btntext"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <Button
+                android:id="@+id/Button06"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_gravity="left"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/threadfilter_btn"
+                android:contentDescription="btnsTop"
+                android:text="高二"
+                android:textColor="@drawable/threadfilter_btntext"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <Button
+                android:id="@+id/Button07"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_gravity="left"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/threadfilter_btn"
+                android:contentDescription="btnsTop"
+                android:text="高三"
+                android:textColor="@drawable/threadfilter_btntext"
+                android:textSize="@dimen/Text_size_middle_1" />
+        </GridLayout>
+
+        <EditText
+            android:id="@+id/getcredit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/gridLayout1"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/gridLayout1"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="悬赏分数（默认0分）"
+            android:inputType="number"
+            android:textSize="@dimen/Text_size_middle_1"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="选择时间"
+        android:textColor="@color/font_color_gray"
+        android:textSize="@dimen/Text_size_big_1" />
+
+    <Button
+        android:id="@+id/Button05"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignLeft="@+id/title"
+        android:layout_alignRight="@+id/title"
+        android:layout_below="@+id/title"
+        android:background="@drawable/button1_f9"
+        android:tag="300"
+        android:text="5分钟"
+        android:textColor="@color/def_background"
+        android:textSize="@dimen/Text_size_big_3" />
+
+    <Button
+        android:id="@+id/Button04"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_above="@+id/Button02"
+        android:layout_alignRight="@+id/Button05"
+        android:layout_below="@+id/Button05"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/Button03"
+        android:background="@drawable/button1_f9"
+        android:tag="120"
+        android:text="2分钟"
+        android:textColor="@color/def_background"
+        android:textSize="@dimen/Text_size_big_2" />
+
+    <Button
+        android:id="@+id/Button03"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/Button01"
+        android:layout_alignLeft="@+id/Button05"
+        android:layout_alignTop="@+id/Button04"
+        android:background="@drawable/button1_f9"
+        android:tag="60"
+        android:text="60秒"
+        android:textColor="@color/def_background"
+        android:textSize="@dimen/Text_size_big_2" />
+
+    <Button
+        android:id="@+id/Button02"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/Button04"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/Button01"
+        android:background="@drawable/button1_f9"
+        android:tag="40"
+        android:text="40秒"
+        android:textColor="@color/def_background"
+        android:textSize="@dimen/Text_size_big_1" />
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/Button03"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/Button04"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button1_f9"
+        android:tag="20"
+        android:text="20秒"
+        android:textColor="@color/def_background"
+        android:textSize="@dimen/Text_size_big_1" />
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    android:orientation="vertical" >
+
+    <com.yxkj.jyb.ui.CropImageView
+        android:id="@+id/cropimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_margin="10dp"
+        android:layout_toLeftOf="@+id/looker"
+        android:background="#ffffffff"
+        android:scaleType="fitStart"
+        android:src="#00000000" />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cropimage"
+        android:layout_alignTop="@+id/cropimage"
+        android:background="#00000000"
+        android:text="确定"
+        android:textColor="@color/def_font_color_black"
+        android:textSize="@dimen/Text_size_middle_1" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/cropimage"
+        android:layout_alignTop="@+id/cropimage"
+        android:background="#FF000000"
+        android:padding="13dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/back_holo_light" />
+
+    <ImageView
+        android:id="@+id/looker"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

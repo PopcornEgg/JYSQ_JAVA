@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFFFF"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+
+    <GridLayout
+        android:id="@+id/GridLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:columnCount="1"
+        android:numColumns="4"
+        android:orientation="horizontal"
+        android:rowCount="4" >
+
+        <Button
+            android:id="@+id/Button03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:drawableTop="@drawable/icon_square_sel"
+            android:text="我的编码" />
+
+        <Button
+            android:id="@+id/Button01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_row="0"
+            android:drawableTop="@drawable/icon_square_sel"
+            android:text="记忆宫殿" />
+
+        <Button
+            android:id="@+id/Button02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="right|top"
+            android:layout_row="0"
+            android:drawableTop="@drawable/icon_square_sel"
+            android:text="脑力比赛" />
+
+    </GridLayout>
+
+</RelativeLayout>

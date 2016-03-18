@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+  
+    <!-- 显示预览图形 -->
+
+    <RelativeLayout
+        android:id="@+id/croper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:visibility="visible" >
+
+        <com.yxkj.jyb.ui.CropImageView
+            android:id="@+id/imagecrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_toLeftOf="@+id/crop_ok"
+            android:background="#00000000" />
+
+        <ImageButton
+            android:id="@+id/crop_ok"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:background="#00000000"
+            android:padding="2dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_ok_01"
+            android:text="确定" />
+
+         <ImageButton
+             android:id="@+id/crop_back"
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             android:layout_alignParentBottom="true"
+             android:layout_alignRight="@+id/crop_ok"
+             android:background="#00000000"
+             android:padding="8dp"
+             android:scaleType="fitXY"
+             android:src="@drawable/icon_back_01" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:visibility="invisible" >
+
+        <SurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+
+        <Button
+            android:id="@+id/switch_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="switch"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/snap"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_camera_01" />
+
+        <ImageButton
+            android:id="@+id/camera_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/snap"
+            android:background="#00000000"
+            android:padding="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_back_01" />
+
+    </RelativeLayout>
+
+</RelativeLayout>  

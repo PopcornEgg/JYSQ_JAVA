@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/font_color_gray_small2"
+    android:orientation="vertical"
+    android:paddingBottom="1dp" >
+
+    <LinearLayout
+        android:id="@+id/fullinfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="#FFFFFFFF"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/head"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_margin="10px"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/default_headicon" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/head"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="心无质量"
+                android:textColor="@color/font_color_gray"
+                android:textSize="@dimen/Text_size_small_1" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="10px"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/name"
+                android:text="1分钟前"
+                android:textColor="@color/font_color_gray_small2"
+                android:textSize="@dimen/Text_size_small_0" />
+
+            <Button
+                android:id="@+id/getbjb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/bg_color_transparent"
+                android:text="添加笔记"
+                android:textColor="@color/font_color_blue"
+                android:textSize="@dimen/Text_size_small_1"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/adopt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#00FFFFFF"
+                android:text="采纳"
+                android:textColor="@color/font_color_blue"
+                android:textSize="@dimen/Text_size_small_1" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="大家行行好！给点倩倩吧！！"
+            android:textColor="@color/def_font_color_black"
+            android:textSize="@dimen/Text_size_middle_1" />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:adjustViewBounds="true"
+            android:baselineAlignBottom="false"
+            android:cropToPadding="false"
+            android:maxHeight="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/emptyinfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/fullinfo"
+        android:gravity="center"
+        android:text="学霸，挑战一下这个问题吧！"
+        android:textColor="@color/def_font_color_black"
+        android:textSize="@dimen/Text_size_middle_1"
+        android:visibility="invisible" />
+
+</RelativeLayout>

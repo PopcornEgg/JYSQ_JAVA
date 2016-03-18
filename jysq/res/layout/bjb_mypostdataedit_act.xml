@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical" >
+
+<RelativeLayout
+        android:id="@+id/Layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Head_hight"
+        android:background="#FF1380E9" >
+
+        <ImageButton
+		    android:id="@+id/back"
+		    android:layout_width="50dp"
+		    android:layout_height="50dp"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:background="#00000000"
+		    android:padding="13dp"
+		    android:scaleType="centerInside"
+		    android:src="@drawable/back_holo_light" />
+
+        <TextView
+            android:id="@+id/titletxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="编辑"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/Text_size_big_1" />
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="#00000000"
+            android:text="确定"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/Text_size_middle_1" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fullinfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/group"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <EditText
+            android:id="@+id/edtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#00000000"
+            android:editable="true"
+            android:gravity="center_vertical"
+            android:hint="主题/问题"
+            android:textColor="#FF000000"
+            android:textSize="@dimen/Text_size_middle_1" />
+
+        <ImageView
+            android:id="@+id/split1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:src="@color/bg_color_gray_1" />
+
+        <EditText
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#00000000"
+            android:editable="true"
+            android:gravity="center_vertical"
+            android:hint="内容"
+            android:textColor="#FF000000"
+            android:textSize="@dimen/Text_size_middle_1" />
+
+        <ImageView
+            android:id="@+id/split2"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:src="@color/bg_color_gray_1" />
+
+        <EditText
+            android:id="@+id/mem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#00000000"
+            android:editable="true"
+            android:gravity="center_vertical"
+            android:hint="记忆"
+            android:textColor="#FF000000"
+            android:textSize="@dimen/Text_size_middle_1" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Layout"
+        android:layout_margin="10dp"
+        android:background="@color/bg_color_gray_1"
+        android:drawableLeft="@drawable/icon_bjb_nor"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/abc_ic_menu_moreoverflow_normal_holo_light"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="第一注"
+        android:textColor="@color/font_color_gray"
+        android:textSize="@dimen/Text_size_middle_1" />
+
+</RelativeLayout>

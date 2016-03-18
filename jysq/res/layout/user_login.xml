@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/Layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Head_hight"
+        android:background="#FF1380E9" >
+
+        <ImageButton
+		    android:id="@+id/back"
+		    android:layout_width="50dp"
+		    android:layout_height="50dp"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:background="#00000000"
+		    android:padding="13dp"
+		    android:scaleType="centerInside"
+		    android:src="@drawable/back_holo_light" />        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="56dp"
+            android:text="登录"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/Text_size_big_1" />
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="22dp"
+            android:background="#00000000"
+            android:text="确定"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/Text_size_middle_1" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#FF1380E9"
+        android:text="注册"
+        android:textColor="#FFFFFFFF"
+        android:textSize="@dimen/Text_size_middle_1" />
+
+    <EditText
+        android:id="@+id/editname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="45dp"
+        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:ems="10"
+        android:hint="账号"
+        android:singleLine="true"
+        android:textSize="@dimen/Text_size_middle_1" >
+
+        <requestFocus />
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/editpsw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editname"
+        android:layout_alignRight="@+id/editname"
+        android:layout_below="@+id/editname"
+        android:ems="10"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:password="true"
+        android:singleLine="true"
+        android:textSize="@dimen/Text_size_middle_1" >
+
+    </EditText>
+
+</RelativeLayout>

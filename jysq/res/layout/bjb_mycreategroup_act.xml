@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical" >
+
+<RelativeLayout
+        android:id="@+id/Layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Head_hight"
+        android:background="#FF1380E9" >
+
+        <ImageButton
+		    android:id="@+id/back"
+		    android:layout_width="50dp"
+		    android:layout_height="50dp"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:background="#00000000"
+		    android:padding="13dp"
+		    android:scaleType="centerInside"
+		    android:src="@drawable/back_holo_light" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="创建分组"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/Text_size_big_1" />
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="#00000000"
+            android:text="确定"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/Text_size_middle_1" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fullinfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Layout"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/subname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:editable="true"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="分组名称"
+            android:textColor="#FF000000"
+            android:textSize="@dimen/Text_size_big_1" />
+
+        <ImageView
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="@color/bg_color_gray_1" />
+
+        <LinearLayout
+            android:id="@+id/llt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/Button01"
+                style="@style/bjb_subject_btn_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:contentDescription="btnsBottom"
+                android:drawableTop="@drawable/ico_yuwen"
+                android:tag="0"
+                android:text="语文" />
+
+            <Button
+                android:id="@+id/Button02"
+                style="@style/bjb_subject_btn_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#FFFFFFFF"
+                android:contentDescription="btnsBottom"
+                android:drawableTop="@drawable/ico_shuxue"
+                android:tag="1"
+                android:text="数学" />
+
+            <Button
+                android:id="@+id/Button03"
+                style="@style/bjb_subject_btn_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#FFFFFFFF"
+                android:contentDescription="btnsBottom"
+                android:drawableTop="@drawable/ico_yingyu"
+                android:tag="2"
+                android:text="英语" />
+
+            <Button
+                android:id="@+id/Button04"
+                style="@style/bjb_subject_btn_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#FFFFFFFF"
+                android:contentDescription="btnsBottom"
+                android:drawableTop="@drawable/ico_wuli"
+                android:tag="3"
+                android:text="物理" />
+
+            <Button
+                android:id="@+id/Button05"
+                style="@style/bjb_subject_btn_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#FFFFFFFF"
+                android:contentDescription="btnsBottom"
+                android:drawableTop="@drawable/ico_huaxue"
+                android:tag="4"
+                android:text="化学" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/Button06"
+                style="@style/bjb_subject_btn_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#FFFFFFFF"
+                android:contentDescription="btnsBottom"
+                android:drawableTop="@drawable/ico_shengwu"
+                android:tag="5"
+                android:text="生物" />
+
+            <Button
+                android:id="@+id/Button07"
+                style="@style/bjb_subject_btn_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#FFFFFFFF"
+                android:contentDescription="btnsBottom"
+                android:drawableTop="@drawable/ico_zhengzhi"
+                android:tag="6"
+                android:text="政治" />
+
+            <Button
+                android:id="@+id/Button08"
+                style="@style/bjb_subject_btn_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#FFFFFFFF"
+                android:contentDescription="btnsBottom"
+                android:drawableTop="@drawable/ico_lishi"
+                android:tag="7"
+                android:text="历史" />
+
+            <Button
+                android:id="@+id/Button09"
+                style="@style/bjb_subject_btn_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#FFFFFFFF"
+                android:contentDescription="btnsBottom"
+                android:drawableTop="@drawable/ico_dili"
+                android:tag="8"
+                android:text="地理" />
+
+            <Button
+                android:id="@+id/Button10"
+                style="@style/bjb_subject_btn_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#FFFFFFFF"
+                android:contentDescription="btnsBottom"
+                android:drawableTop="@drawable/ico_yuwen"
+                android:tag="9"
+                android:text="其他" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

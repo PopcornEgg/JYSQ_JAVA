@@ -1,0 +1,4 @@
+#分类id	分类名字	能否编辑
+$tpid	tpname	edit
+0	数字	N
+1	字母	N

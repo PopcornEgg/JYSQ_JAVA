@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFFFF"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center_vertical"
+        android:adjustViewBounds="true"
+        android:baselineAlignBottom="false"
+        android:cropToPadding="false"
+        android:maxHeight="100dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/study_10" />
+
+    <TextView
+        android:id="@+id/lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/img"
+        android:gravity="center_vertical"
+        android:text="视频入门"
+        android:textColor="@color/def_font_color_black"
+        android:textSize="@dimen/Text_size_big_1" />
+
+    <CheckedTextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lable"
+        android:layout_below="@+id/lable"
+        android:text="32:21"
+        android:textColor="@color/font_color_gray_small"
+        android:textSize="@dimen/Text_size_small_1" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:layout_alignLeft="@+id/time"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/time"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:max="100"
+        android:progress="35" />
+
+  </RelativeLayout>
+    
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#FFFFFFFF"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+  <com.handmark.pulltorefresh.library.PullToRefreshListView
+      android:id="@+id/pulllv"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/def_background"
+      android:divider="@color/font_color_gray_small2"
+      ptr:ptrHeaderBackground="@color/font_color_gray_small2"
+      ptr:ptrHeaderTextColor="@color/def_font_color_black" >
+
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    
+</RelativeLayout>

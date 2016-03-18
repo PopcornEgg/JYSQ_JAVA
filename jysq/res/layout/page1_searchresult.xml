@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/font_color_gray_small2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/searchresult_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Head_hight"
+        android:background="@color/font_color_blue" >
+
+        <TextView
+            android:id="@+id/searchsend_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="56dp"
+            android:text="搜索结果"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/Text_size_big_1" />
+
+        <ImageButton
+            android:id="@+id/searchresult_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:padding="13dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/back_holo_light" />
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/searchresult_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/searchresult_Layout"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/font_color_gray_small2"
+        android:cacheColorHint="@color/font_color_gray_small2"
+        android:divider="@color/font_color_gray_small2"
+        android:dividerHeight="10dp"
+        android:orientation="horizontal"
+        ptr:ptrHeaderBackground="@color/font_color_gray_small2"
+        ptr:ptrHeaderTextColor="@color/def_font_color_black" />
+
+    <RelativeLayout
+        android:id="@+id/searchresult_null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/searchresult_lv"
+        android:layout_below="@+id/searchresult_Layout"
+        android:background="@color/def_background"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="196dp"
+            android:background="@color/def_background"
+            android:gravity="center"
+            android:text="未搜索到结果"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FF000000"
+            android:textSize="@dimen/Text_size_middle_1" />
+
+        <CheckedTextView
+            android:id="@+id/checkedTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="你可以提交到问答社区"
+            android:textColor="@color/font_color_gray_small"
+            android:textSize="@dimen/Text_size_middle_1" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_above="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="22dp"
+            android:src="@drawable/kuqi" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#FFE0E0E0"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/searchresult_search"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.65"
+            android:background="#FF1380E9"
+            android:text="重新搜索"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/Text_size_middle_1" />
+
+        <Button
+            android:id="@+id/searchresult_send"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="0.65"
+            android:background="#FF1380E9"
+            android:text="提交问答"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/Text_size_middle_1" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,1477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/def_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="1-50"
+            android:textColor="@color/font_color_blue"
+            android:textSize="@dimen/Text_size_big_1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/EditText34"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText32"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText36"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText35"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText38"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText37"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText40"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText39"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/EditText25"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText24"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText27"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText26"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText29"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText28"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText31"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText30"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/EditText17"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText16"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText19"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText18"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText21"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText20"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText23"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText22"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/EditText09"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText08"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText11"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText10"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText13"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText12"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText15"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText14"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/EditText07"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText06"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText05"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText04"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText03"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText02"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText01"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/EditText33"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ll1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="1-50"
+            android:textColor="@color/font_color_blue"
+            android:textSize="@dimen/Text_size_big_1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/EditText74"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText73"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText76"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText75"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText78"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText77"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText80"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText79"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/EditText66"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText65"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText68"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText67"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText70"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText69"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText72"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText71"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/EditText58"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText57"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText60"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText59"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText62"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText61"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText64"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText63"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/EditText50"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText49"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText52"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText51"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText54"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText53"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText56"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText55"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/EditText42"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText41"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText44"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText43"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText46"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText45"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText48"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <EditText
+                android:id="@+id/EditText47"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="2dp"
+                
+                android:background="@drawable/img_yuan_0"
+                android:contentDescription="number"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/def_font_color_black"
+                android:textSize="@dimen/Text_size_middle_1" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

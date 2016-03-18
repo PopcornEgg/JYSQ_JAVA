@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/Head_hight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#FF1380E9" >
+
+        <TextView
+            android:id="@+id/titleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="92dp"
+            android:background="#00000000"
+            android:gravity="center"
+            android:text="视频"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/Text_size_big_1" />
+
+        <ImageButton
+            android:id="@+id/help"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/bg_color_transparent"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/help01" />
+
+    </RelativeLayout>
+
+    <!--
+         mageView
+        android:id="@+id/ImageView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="#FFC0C0C0" />
+    -->
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/pull_refresh_list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/Head_hight"
+        android:background="#FFFFFFFF"
+        android:cacheColorHint="@color/font_color_gray_small2"
+        android:divider="@color/font_color_gray_small2"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true" 
+        ptr:ptrHeaderBackground="@color/font_color_gray_small2"  
+        ptr:ptrHeaderTextColor="@color/def_font_color_black"
+        />
+
+</RelativeLayout>

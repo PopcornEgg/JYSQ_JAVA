@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFFFF"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:adjustViewBounds="true"
+            android:baselineAlignBottom="false"
+            android:maxHeight="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img2" />
+
+        <TextView
+            android:id="@+id/ansnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_toLeftOf="@+id/imageView1"
+            android:layout_weight="1"
+            android:text="播放 888"
+            android:textColor="@color/font_color_gray"
+            android:textSize="@dimen/Text_size_small_0" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="bottom"
+            android:text="88"
+            android:textSize="@dimen/Text_size_small_0" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/price"
+            android:layout_alignParentStart="false"
+            android:layout_marginBottom="2dp"
+            android:layout_toLeftOf="@+id/price"
+            android:src="@drawable/messagescenter_notice"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ansnum"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/ansnum"
+            android:text="1分钟前"
+            android:textColor="@color/font_color_gray_small"
+            android:textSize="@dimen/Text_size_small_0" />
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/img"
+            android:text="大家行行好！给点倩倩吧！！"
+            android:textColor="@color/def_font_color_black"
+            android:textSize="@dimen/Text_size_big_1" />
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ansnum"
+            android:layout_alignLeft="@+id/question"
+            android:text="1分钟前"
+            android:textColor="@color/font_color_blue"
+            android:textSize="@dimen/Text_size_small_1" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/font_color_gray_small2" />
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFFFF"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/opfull"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center"
+                android:background="#00000000"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_open1" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/opfull"
+                android:gravity="center"
+                android:text="大家行行"
+                android:textColor="#FF000000"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+        <ImageView
+            android:id="@+id/ivtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_gravity="center"
+            android:maxHeight="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/abc_ab_bottom_solid_dark_holo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fullinfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/full_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/split1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@color/font_color_gray_small2" />
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/split1"
+                android:gravity="center_vertical"
+                android:text="大家行行好！给点倩倩吧！！"
+                android:textColor="#FF000000"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <ImageView
+                android:id="@+id/ivcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/split1"
+                android:maxHeight="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/abc_ab_bottom_solid_dark_holo" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/full_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/split2"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@color/font_color_gray_small2" />
+
+            <TextView
+                android:id="@+id/mem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/split2"
+                android:gravity="center_vertical"
+                android:text="大家行行好！给点倩倩吧！！"
+                android:textColor="#FF000000"
+                android:textSize="@dimen/Text_size_middle_1" />
+
+            <ImageView
+                android:id="@+id/ivmem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/split2"
+                android:maxHeight="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/abc_ab_bottom_solid_dark_holo" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

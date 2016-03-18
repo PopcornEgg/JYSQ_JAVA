@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right|top"
+    android:background="@color/font_color_gray"
+    android:dividerPadding="1dp"
+    android:orientation="vertical"
+    android:showDividers="middle" >
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/base_action_bar_bg"
+        android:contentDescription="btnsTop"
+        android:drawableLeft="@drawable/abc_ic_search_api_holo_light"
+        android:padding="5dp"
+        android:text="删除"
+        android:textColor="@drawable/threadfilter_btntext"
+        android:textSize="@dimen/Text_size_middle_1" />
+   
+    <Button
+        android:id="@+id/Button02"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/base_action_bar_bg"
+        android:contentDescription="btnsTop"
+        android:drawableLeft="@drawable/abc_ic_search_api_holo_light"
+        android:padding="5dp"
+        android:text="添加"
+        android:textColor="@drawable/threadfilter_btntext"
+        android:textSize="@dimen/Text_size_middle_1" />
+
+</LinearLayout>

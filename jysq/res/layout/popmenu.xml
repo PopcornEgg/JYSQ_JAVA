@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right|top"
+    android:background="@color/bg_color_transparent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_margin="1dp"
+        android:background="@drawable/base_action_bar_bg"
+        android:contentDescription="btnsTop"
+        android:text="训练"
+        android:textColor="@drawable/threadfilter_btntext"
+        android:textSize="@dimen/Text_size_middle_1" />
+
+    <!-- <Button
+        android:id="@+id/Button02"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_margin="1dp"
+        android:background="@drawable/base_action_bar_bg"
+        android:contentDescription="btnsTop"
+        android:text="联结训练"
+        android:textColor="@drawable/threadfilter_btntext"
+        android:textSize="@dimen/Text_size_middle_1" /> -->
+
+</LinearLayout>

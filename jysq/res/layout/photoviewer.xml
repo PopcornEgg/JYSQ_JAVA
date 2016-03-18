@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/answerly" >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="matrix" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/answerly"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#00FFFFFF"
+        android:gravity="top"
+        android:visibility="invisible" >
+
+            <Button android:id="@+id/send" android:layout_width="60dp" android:layout_height="40dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="10dp" android:background="#FF1380E9" android:text="发送" android:textColor="#ffffffff" android:textSize="@dimen/Text_size_middle_1" android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/photo"
+                android:layout_width="50dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="#00000000"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_camera_03" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/send"
+                android:layout_toRightOf="@+id/photo"
+                android:ems="10"
+                android:hint="输入要回答的内容"
+                android:inputType="textMultiLine"
+                android:textSize="@dimen/Text_size_middle_1" >
+
+                <requestFocus />
+            </EditText>
+
+        </RelativeLayout><RelativeLayout
+        android:id="@+id/oply"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#00FFFFFF"
+        android:gravity="top"
+        android:visibility="visible" >
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_back_02" />
+
+        <ImageButton
+            android:id="@+id/ra"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_back_03" />
+
+        <ImageButton
+            android:id="@+id/reply"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="#00000000"
+            android:padding="2dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_meassage_01" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

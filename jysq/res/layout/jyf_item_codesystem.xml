@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/def_background"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <com.yxkj.jyb.ui.LineGridView
+        android:id="@+id/lgv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:numColumns="3" >
+
+    </com.yxkj.jyb.ui.LineGridView>
+
+</LinearLayout>
